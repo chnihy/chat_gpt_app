@@ -14,3 +14,9 @@ def get_files_recursively(directory):
                 files.append(os.path.join(dirpath, filename))
     return files
 
+def show_dict(dct:dict, indent=0):
+    for k,v in dct.items():
+        if type(v) == dict:
+            show_dict(v, indent=(indent+2))
+        else:
+            print((" "*indent)+ f"{k}: {v}")

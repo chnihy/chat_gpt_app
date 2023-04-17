@@ -1,0 +1,4 @@
+#!/bin/bash
+echo '<<<< CHAT GPT APP >>>>'
+python3 -i -c 'from gpt import *'
+echo 'goodbye'
